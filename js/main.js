@@ -279,13 +279,138 @@
 		if (!( $("#header-search").hasClass('is-visible'))) {
 
 			if (jQuery(window).scrollTop() >= pxShow) {
-				jQuery("#go-top").fadeIn(fadeInTime);
+				jQuery("#go-top").css('display', 'block').fadeIn(fadeInTime);
 			} else {
-				jQuery("#go-top").fadeOut(fadeOutTime);
+				jQuery("#go-top").fadeOut(fadeOutTime, function() {
+					jQuery(this).css('display', 'none');
+				});
 			}
 
 		}		
 
-	});		
-
+	});
 })(jQuery);
+
+// Hamburger Menu Toggle
+(function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNavigation = document.querySelector('.main-navigation');
+
+    if (menuToggle && mainNavigation) {
+        menuToggle.addEventListener('click', function() {
+            // Toggle menu and hamburger icon
+            menuToggle.classList.toggle('active');
+            mainNavigation.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!menuToggle.contains(event.target) && !mainNavigation.contains(event.target)) {
+                menuToggle.classList.remove('active');
+                mainNavigation.classList.remove('active');
+            }
+        });
+
+        // Close menu when a navigation link is clicked
+        const navLinks = mainNavigation.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('active');
+                mainNavigation.classList.remove('active');
+            });
+        });
+
+        // Keyboard accessibility
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && mainNavigation.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                mainNavigation.classList.remove('active');
+            }
+        });
+    }
+})();
+
+// Mobile Navigation Toggle
+(function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMobileMenu = document.querySelector('.nav-mobile-menu');
+    const navLinks = document.querySelectorAll('.nav-mobile-menu a');
+
+    // Toggle mobile menu
+    navToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('is-clicked');
+        navMobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navToggle.classList.remove('is-clicked');
+            navMobileMenu.classList.remove('active');
+        });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const isClickInsideNavToggle = navToggle.contains(e.target);
+        const isClickInsideMobileMenu = navMobileMenu.contains(e.target);
+
+        if (!isClickInsideNavToggle && !isClickInsideMobileMenu) {
+            navToggle.classList.remove('is-clicked');
+            navMobileMenu.classList.remove('active');
+        }
+    });
+})();
+
+// Cursor Circle Tracking
+document.addEventListener('DOMContentLoaded', () => {
+    const cursorCircle = document.createElement('div');
+    cursorCircle.id = 'cursor-circle';
+    document.body.appendChild(cursorCircle);
+
+    let mouseTimeout;
+    let lastX = 0, lastY = 0;
+
+    // Track mouse movement
+    document.addEventListener('mousemove', (e) => {
+        // Clear previous timeout
+        clearTimeout(mouseTimeout);
+
+        // Remove at-rest class
+        cursorCircle.classList.remove('at-rest');
+
+        // Update circle position
+        cursorCircle.style.left = `${e.clientX}px`;
+        cursorCircle.style.top = `${e.clientY}px`;
+
+        // Check if mouse is moving
+        if (e.clientX !== lastX || e.clientY !== lastY) {
+            // Set timeout for at-rest state
+            mouseTimeout = setTimeout(() => {
+                cursorCircle.classList.add('at-rest');
+            }, 1000);
+        }
+
+        // Update last known position
+        lastX = e.clientX;
+        lastY = e.clientY;
+    });
+
+    // Expand circle on interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .skill-item, .nav-right a');
+    
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            // Reduce size to 30px for clickable elements (50% of 60px)
+            cursorCircle.style.width = '30px';
+            cursorCircle.style.height = '30px';
+        });
+        
+        el.addEventListener('mouseleave', () => {
+            // Return to default size of 20px
+            cursorCircle.style.width = '20px';
+            cursorCircle.style.height = '20px';
+        });
+    });
+});

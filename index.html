@@ -12,8 +12,17 @@
 	<meta name="description" content="Khagendra Prasad Bimali's online portfolio showcasing years of experience in Software QA industry, including skills in Software QA, QC,JAVA, MySQL, Testing, and more.">  
 	<meta name="keywords" content="Khagendra Prasad Bimali, portfolio, computer industry, technical skills, communication skills, goal-focused professional, Software QA, QC, JAVA, MySQL, Windows, Testing, Selenium web driver, TestNG, Agile methodology, Postman, Appium, Dockor, Blazemeter, Apache Jmeter, Zenkins">
 	<meta name="author" content="Khagendra Prasad Bimali">
-
-   <!-- mobile specific metas
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/base.css" as="style">
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="css/vendor.css" as="style">
+    <link rel="preload" href="css/animations.css" as="style">
+    <link rel="preload" href="js/modernizr.js" as="script">
+    <link rel="preload" href="js/pace.min.js" as="script">
+    <link rel="preload" href="js/animations.js" as="script">
+    
+    <!-- mobile specific metas
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -22,15 +31,21 @@
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/animations.css">     
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
    <!-- script
    ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="js/animations.js"></script>
 
    <!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="apple-touch-icon" href="favicon.png">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
 
 </head>
 
@@ -40,30 +55,37 @@
    ================================================== -->
    <header>   	
    	<div class="row">
-
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-	   		<div class="logo">
-		         <!--<a href="index.html">KHAGENDRA</a> -->
-		      </div>		      
-
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#certificate" title="">Certificate</a></li>
-						<!--- <li><a class="smoothscroll"  href="#services" title="">Services</a></li> --->					
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
-						<!-- <li><a href="styles.html" title="">Style Demo</a></li> -->				
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
+		    <nav>
+		        <div class="nav-container">
+		            <div class="nav-left">
+		                <a href="#intro" class="smoothscroll nav-brand">Khagendra Prasad Bimali</a>
+		            </div>
+		            <div class="nav-right">
+		                <a href="#about" class="smoothscroll">About</a>
+		                <a href="#skills" class="smoothscroll">Skills</a>
+		                <a href="#resume" class="smoothscroll">Resume</a>
+		                <a href="#portfolio" class="smoothscroll">Portfolio</a>
+		                <a href="#certificate" class="smoothscroll">Certificates</a>
+		                <a href="#contact" class="smoothscroll">Contact</a>
+		            </div>
+		            <div class="nav-mobile">
+		                <a href="#" class="nav-toggle">
+		                    <span></span>
+		                </a>
+		            </div>
+		        </div>
+		        <div class="nav-mobile-menu">
+		            <a href="#about" class="smoothscroll">About</a>
+		            <a href="#skills" class="smoothscroll">Skills</a>
+		            <a href="#resume" class="smoothscroll">Resume</a>
+		            <a href="#portfolio" class="smoothscroll">Portfolio</a>
+		            <a href="#certificate" class="smoothscroll">Certificates</a>
+		            <a href="#contact" class="smoothscroll">Contact</a>
+		        </div>
+		    </nav>
+   	</div> <!-- /row --> 	
    </header> <!-- /header -->
+
 
 	<!-- intro section
    ================================================== -->
@@ -80,11 +102,11 @@
 	   			<h1>I'm Khagendra Prasad Bimali.</h1>
 
 	   			<p class="intro-position">
-	   				<span>Software QA Trainee</span>
+	   				<span>Software QA Enthusiast</span>
 	   				<!--<span>UI/UX Designer</span> -->
 	   			</p>
 
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+	   			<a class="button stroke smoothscroll" href="#contact" title="">Get In Touch</a>
 
 	   		</div>  
    			
@@ -93,8 +115,8 @@
 
    	<ul class="intro-social">        
          <li><a href="https://www.facebook.com/raju.bimali.8" target="_blank"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-         <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.instagram.com/rajubimali_?igsh=MW9yanNlOGxzMWF5cg==" target="_blank"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="http://www.khagendraprasadbimali.com.np/" target="_blank"><i class="fa fa-twitter"></i></a></li>
          <li><a href="https://www.youtube.com/@rajubimali?sub_confirmation=1" target="_blank"><i class="fa fa-youtube"></i></a></li>
 		 <li><a href="https://www.linkedin.com/in/khagendraprasadbimali/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
          <li><a href="https://github.com/KhagendraBimali" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -106,157 +128,209 @@
 
    <!-- about section
    ================================================== -->
-   <section id="about">  
-
+   <section id="about" aria-labelledby="about-title">  
    	<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>About Me</h5>
-   			<h1>Let me introduce myself.</h1>
+   			<h5>ABOUT ME</h5>
+            <h1 id="about-title" class="responsive-headline">Let me introduce myself.</h1>
 
-   			<div class="intro-info">
-
-   				<img src="images/profile.jpg" alt="Profile Picture">
-
-   				<p class="lead">"I believe QA is not just about finding bugs but about ensuring an exceptional end-user experience. I focus on proactively identifying areas of improvement and collaborating closely with developers and product managers to deliver robust, user-friendly products."</p>
-   			</div>   			
-
+            <div class="intro-info">
+                <img src="images/img7.jpg" alt="Profile Picture">
+                <p class="lead" aria-label="Professional Summary">"I believe QA is not just about finding bugs but about ensuring an exceptional end-user experience. I focus on proactively identifying areas of improvement and collaborating closely with developers and product managers to deliver robust, user-friendly products."</p>
+            </div>
    		</div>   		
-   	</div> <!-- /section-intro -->
-
+   	</div>
+   	
    	<div class="row about-content">
-
-   		<div class="col-six tab-full">
-
-   			<h3>Profile</h3>
-   			<p>I’m a dedicated Quality Assurance (QA) professional passionate about delivering top-tier software quality. With over a year of experience in the tech industry, I specialize in both manual and automated testing to ensure seamless, high-performing products.
-
-				My toolkit includes Selenium WebDriver, TestNG, Postman, Appium, JMeter, and JIRA, and I’m skilled in working within Agile environments to support rapid, iterative development. My focus goes beyond finding bugs—I’m committed to enhancing the overall user experience and ensuring products meet the highest standards of quality and reliability.
-				
-				I approach every project with a commitment to continuous improvement, eagerly expanding my skills with advanced testing techniques and new tools in the QA field. Outside of work, I stay active by playing sports like badminton and football, always seeking new challenges that fuel my growth both personally and professionally.
-				
-				If you’re looking for a detail-oriented QA specialist enthusiastic about product quality, let’s connect—I’d love to discuss how I can contribute to your team or projects!.
-				
-				</p>
+   		<div class="col-twelve">
+   			<h3 class="skills-title">PROFILE</h3>
+            <p>I'm a dedicated Quality Assurance (QA) professional passionate about delivering top-tier software quality. With over a year of experience in the tech industry, I specialize in both manual and automated testing to ensure seamless, high-performing products.My toolkit includes Selenium WebDriver, TestNG, Postman, JMeter, Appium, and JIRA, and I'm skilled in working within Agile environments to support rapid, iterative development. My focus goes beyond finding bugs—I'm committed to enhancing the overall user experience and ensuring products meet the highest standards of quality and reliability.I approach every project with a commitment to continuous improvement, eagerly expanding my skills with advanced testing techniques and new tools in the QA field. Outside of work, I stay active by playing sports like badminton and football, always seeking new challenges that fuel my growth both personally and professionally.If you're looking for a detail-oriented QA specialist enthusiastic about product quality, let's connect—I'd love to discuss how I can contribute to your team or projects!</p>
+            <ul class="info-list">
+                <div class="info-columns">
+                    <div class="info-column left-column">
+                        <li>
+                            <strong>FULL NAME:</strong>
+                            <span>Khagendra Prasad Bimali</span>
+                        </li>
+                        <li>
+                            <strong>ADDRESS:</strong>
+                            <span>Kathmandu, Nepal</span>
+                        </li>
+                        <li>
+                            <strong>DEGREE:</strong>
+                            <span>Bachelors</span>
+                        </li>
+                    </div>
+                    <div class="info-column right-column">
+                        <li>
+                            <strong>EMAIL:</strong>
+                            <span>contact@khagendraprasadbimali.com.np</span>
+                        </li>
+                        <li>
+                            <strong>FREELANCE:</strong>
+                            <span>Available</span>
+                        </li>
+                    </div>
+                </div>
+            </ul>
 
    			<ul class="info-list">
-   				<li>
+   				<!--<li>
    					<strong>Full name:</strong>
    					<span>Khagendra Prasad Bimalii</span>
-   				</li>
+   				</li>-->
    				<!--<li>
    					<strong>Birth Date:</strong>
    					<span>June 30, 1999</span>
    				</li>-->
-   				<li>
+   				<!--<li>
    					<strong>Degree:</strong>
    					<span>Bachelors</span>
-   				</li>
-   				<li>
+   				</li>-->
+   				<!--<li>
    					<strong>Email:</strong>
    					<span>contact@khagendraprasadbimali.com.np</span>
-   				</li>
-   				<li>
+   				</li>-->
+   				<!--<li>
    					<strong>Address:</strong>
    					<span>Kathmandu, Nepal</span>
-   				</li>
-				   <li>
+   				</li>-->
+				<!--<li>
 					<strong>Freelance:</strong>
 					<span>Available</span>
-				</li>
-
+				</li>-->
    			</ul> <!-- /info-list -->
-
    		</div>
 
-   		<div class="col-six tab-full">
-
-   			<h3>Professional Skills</h3>
-   			<!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
-
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>CSS3</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Java</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Test planning, Test cases</strong>
-				   </li>
-				   <li>
-					<div class="progress percent85"><span>85%</span></div>
-				   	<strong>Manual Testing</strong>
-				   </li>
-				   <li>
-					<div class="progress percent85"><span>85%</span></div>
-				   	<strong>sdlc & stlc</strong>
-				   </li>
-				   <li>
-					<div class="progress percent80"><span>80%</span></div>
-				   	<strong>Jira </strong>
-				   </li>
-				   <li>
-					<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Selenium(automation)</strong>
-				   </li>
-				   <li>
-					<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Apache Jmeter</strong>
-				   </li>
-				   <li>
-					<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Blazemeter</strong>
-				   </li>
-				   <li>
-					<div class="progress percent65"><span>65%</span></div>
-				   	<strong>Appium</strong>
-				   </li>
-				   <li>
-					<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Burpsuite</strong>
-				   </li>
-				   <li>
-					<div class="progress percent65"><span>65%</span></div>
-				   	<strong>acunetix</strong>
-				   </li>
-				   <li>
-					<div class="progress percent60"><span>60%</span></div>
-				   	<strong>Jenkins</strong>
-				   </li>
-      
-				</ul> <!-- /skill-bars -->		
-
-   		</div>
-
+        <div class="col-twelve" id="skills">
+            <h3 class="skills-title">MY SKILLS</h3>
+            <div class="skills-container" aria-label="Professional Skills">
+                <div class="skills-column">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="progress percent90 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress percent75 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress percent70 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress percent70 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Quality Assurance</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress percent85 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SDLC & STLC</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress percent80 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Test Planning, Test Cases</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress percent85 animate-on-scroll"></div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Manual Testing</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="progress percent85 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Selenium (Automation)</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress percent75 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JIRA</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="progress percent80 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">API Testing</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="progress percent75 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Apache JMeter</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress percent70 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Burp Suite</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="progress percent70 animate-on-scroll"></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Jenkins</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="progress percent60 animate-on-scroll"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
    	</div>
 
    	<div class="row button-section">
    		<div class="col-twelve">
    			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="https://drive.google.com/uc?export=download&id=1EFFRZRBXLrd_mAv-auX0UGJB3gEImHHd" title="Download CV" class="button button-primary">Download CV</a>
+   			<a href="https://drive.google.com/uc?export=download&id=12qGBrRxkOS8QayUQAAGjlhVwBAO9NFTr" title="Download CV" class="button button-primary">Download CV</a>
    		</div>   		
    	</div>
 
-   </section> <!-- /process-->    
+   </section> <!-- /process-->  <!-drive link---- https://drive.google.com/file/d/18OW6ESy7_tcuDnh6MibS_mC8lkHrAeag/view?usp=sharing-->  
 
 
    <!-- resume Section
    ================================================== -->
-	<section id="resume" class="grey-section">
+	<section id="resume" aria-labelledby="resume-title" class="grey-section">
 
 		<div class="row section-intro">
    		<div class="col-twelve">
 
    			<h5>Resume</h5>
-   			<h1>More of my credentials.</h1>
+   			<h2 id="resume-title">My Professional Journey</h2>
 
    			<!--<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> -->
 
@@ -283,37 +357,47 @@
 
 	   				<div class="timeline-header">
 	   					<h3>QA Training</h3>
-	   					<p>2024 - Present</p>
+	   					<p>SEP 2024 - DEC 2024</p>
 	   				</div>
 
 	   				<div class="timeline-content">
 	   					<h4>Skill Shikshya</h4>
 	   					<!--<p> -->
 							<ul>
-							<li>Developing Skills in Quality Assurance: Gaining hands-on experience in both manual and automated testing processes, with a strong focus on enhancing product quality and user experience.</li>
+								<li>Developed Skills in Quality Assurance: Gained hands-on experience in both manual and automated testing processes, with a strong focus on enhancing product quality and user experience.</li>
+								
+								<li>Tools and Technologies: Trained with industry-standard tools such as Selenium WebDriver, TestNG, Postman, JMeter, Appium, and JIRA, building a robust foundation in automation and performance testing, as well as bug tracking.</li>
+								
+								<li>Testing Methodologies: Learned and applied key testing techniques, including functional testing, regression testing, performance testing, and cross-browser testing, ensuring comprehensive test coverage.</li>
+								
+								<li>Defect Management: Developed skills in identifying, logging, and managing defects using JIRA, effectively communicating issues and collaborating with developers to resolve them.</li>
+								
+								<li>Agile Practices: Gained experience with Agile methodologies, participated in simulated sprint cycles, understood the importance of QA in each phase of the Agile process, and collaborated with cross-functional teams.</li>
+								
+								<li>Test Case Design and Execution: Developed well-structured test cases aligned with requirements, executed test cases, and ensured comprehensive testing coverage for all functionalities.</li>
 
-							<li>Tools and Technologies: Training with industry-standard tools such as Selenium WebDriver, TestNG, Postman, JMeter, Appium, and JIRA to build a robust foundation in automation and performance testing, as well as bug tracking.</li>
-							
-							<li>Testing Methodologies: Learning and applying key testing techniques, including functional testing, regression testing, performance testing, and cross-browser testing to ensure comprehensive test coverage.</li>
-							
-							<li>Defect Management: Developing skills in identifying, logging, and managing defects using JIRA, learning to communicate issues effectively and work collaboratively with developers to resolve them.</li>
-							
-							<li>Agile Practices: Gaining experience with Agile methodologies, participating in simulated sprint cycles, understanding the importance of QA in each phase of the Agile process, and collaborating with cross-functional teams.</li>
-							
-							<li>Test Automation: Writing, executing, and maintaining automated test scripts using Selenium WebDriver and TestNG, focusing on increasing test efficiency and coverage while reducing manual testing efforts.</li>
-							
-							<li>API Testing: Conducting API testing using Postman to validate backend functionality, including verifying responses, error handling, and performance of RESTful APIs.</li>
-							
-							<li>Performance Testing: Utilizing JMeter for performance and load testing to assess application stability and responsiveness under different levels of demand.</li>
-							
-							<li>Test Case Design and Execution: Developing well-structured test cases that align with requirements, executing test cases, and ensuring comprehensive testing coverage for all functionalities.</li>
-							
-							<li>Documentation and Reporting: Creating detailed test plans, test cases, and test reports, learning to document processes and results effectively to communicate findings with stakeholders.</li>
-							
-							<li>Problem-Solving and Analytical Skills: Strengthening analytical skills to diagnose issues, identify root causes, and suggest improvements, contributing to a more efficient and effective QA process.</li>
-							
-							<li>Project Work and Simulated Environments: Participating in real-world projects and simulated environments to apply QA concepts in a practical setting, including end-to-end testing workflows from planning to defect resolution.</li>
-						</ul>
+								<li>Test Automation: Wrote, executed, and maintained automated test scripts using Selenium WebDriver and TestNG, focusing on increasing test efficiency and coverage while reducing manual testing efforts.</li>
+								
+								<li>API Testing: Conducted API testing using Postman to validate backend functionality, including verifying responses, error handling, and performance of RESTful APIs.</li>
+								
+								<li>Performance Testing: Utilized JMeter for performance and load testing to assess application stability and responsiveness under different levels of demand.</li>
+															
+								<li>Version Control & CI/CD: Gained experience with version control tools like Git and integrated testing into CI/CD pipelines using Jenkins or GitHub Actions to automate testing workflows.</li>
+								
+								<li>Security Testing: Conducted basic security testing to identify vulnerabilities in applications, ensuring compliance with security best practices.</li>
+
+								<li>Usability Testing: Evaluated user interfaces for accessibility and user-friendliness, providing feedback to enhance user experience.</li>
+
+								<li>Mobile Application Testing: Performed testing on mobile applications using Appium and other tools to ensure compatibility across various devices and OS versions.</li>
+								
+								<li>Documentation and Reporting: Created detailed test plans, test cases, and test reports, effectively documenting processes and results to communicate findings with stakeholders.</li>
+								
+								<li>Problem-Solving and Analytical Skills: Strengthened analytical skills to diagnose issues, identify root causes, and suggest improvements, contributing to a more efficient and effective QA process.</li>
+								
+								<li>Project Work and Simulated Environments: Participated in real-world projects and simulated environments, applying QA concepts in a practical setting, including end-to-end testing workflows from planning to defect resolution.</li>
+
+								<li>Collaboration & Communication: Worked closely with developers, product managers, and stakeholders to ensure clarity in requirements, timely defect resolution, and seamless integration of testing processes.</li>
+							</ul>
 						<!--</p> -->
 	   				</div>
 
@@ -390,7 +474,7 @@
 	   					<h4>Bachelor of Science in Computer Science and Information Technology(B.Sc.CSIT) </h4>
 						<h5>Affiliated to Tribhuvan University</h5>
 						<h4>Shreeyantra College. Damak-09, Jhapa</h4>
-	   					<!--<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>--> 
+	   					<!--<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p> --> 
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -574,15 +658,15 @@
 
 					   <div class="description-box">
 					      <h4>Recent Project</h4>		      
-					      <p>This the automation projet session done in the training class at skill shikshya.</p>
+					      <p>This the automation projet session done in the training class at skillshikshya.</p>
 
 					      <div class="categories">Automation</div>			               
 					   </div>
 
-			         <div class="link-box">
-			            <a href="http://www.khagendraprasadbimali.com.np/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+					   <div class="link-box">
+					        <a href="https://github.com/KhagendraBimali" target="_blank">Details</a>
+					        <a href="#" class="popup-modal-dismiss">Close</a>
+					   </div>
 
 				   </div> <!-- /modal-01 -->
 
@@ -594,15 +678,15 @@
 
 					   <div class="description-box">
 					      <h4>Group Project</h4>		      
-					      <p>It is an web based e-health service platform where people can book appointments with hospitals and doctors for treatment, finds the available schedule of different specialist doctors, knows the health services of different hospitals, managing patient reports, prices of different health check-ups in different hospitals, buys medicines and many more services. </p>
+					      <p>It is an web based e-health service platform where people can book appointments with hospitals and doctors for treatment, finds the available schedule of different specialist doctors, knows the health services of different hospitals, managing patient reports, prices of different health check-ups in different hospitals, buys medicines and many more services.</p>
 
 					      <div class="categories">Digital Health</div>			               
 					   </div>
 
-			         <div class="link-box">
-			            <a href="http://www.khagendraprasadbimali.com.np/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
+					   <div class="link-box">
+					        <a href="https://github.com/KhagendraBimali" target="_blank">Details</a>
+					        <a href="#" class="popup-modal-dismiss">Close</a>
+					   </div>
 
 				   </div> <!-- /modal-02 -->
 
@@ -616,15 +700,15 @@
 					
 						<div class="description-box">
 					      <h4>Comming Soon</h4>		      
-					      <p>Its is an web based platform for foods.</p>
+					      <p>Its is an web based platform for fashion and design.</p>
 
 					      <div class="categories">E-Commerce Website</div>			               
 					   </div>
 
-			         <div class="link-box">
-			            <a href="http://www.khagendraprasadbimali.com.np/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>	   
+					   <div class="link-box">
+					        <a href="#" target="_blank">Details</a>
+					        <a href="#" class="popup-modal-dismiss">Close</a>
+					   </div>
 
 				   </div> <!-- /modal-03 -->
 
@@ -637,15 +721,15 @@
 
 					   <div class="description-box">
 					      <h4>Comming Soon</h4>		      
-					      <p>The common platform to know more about our country NEPAL.</p>
+					      <p>Welcome to 'Explore All About Nepal,' your ultimate gateway to discovering Nepal like never before. Immerse yourself in the country's breathtaking beauty, vibrant culture, and thrilling adventures—all in one place.</p>
 
 					      <div class="categories">Web Application</div>			               
 					   </div>
 
-			         <div class="link-box">
-			            <a href="http://www.khagendraprasadbimali.com.np/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>	     
+					   <div class="link-box">
+					        <a href="#" target="_blank">Details</a>
+					        <a href="#" class="popup-modal-dismiss">Close</a>
+					   </div>
 
 				   </div> <!-- /modal-04 -->
 
@@ -663,11 +747,6 @@
 					      <div class="categories">Web Development</div>			               
 					   </div>
 
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		  -->    
-
 				   </div> <!-- /modal-05 -->
 
 				 <!----  
@@ -683,11 +762,6 @@
 
 					      <div class="categories">Branding</div>			               
 					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		-->      
 
 				   </div> <!-- /modal-06 -->
 
@@ -712,683 +786,468 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>My Certificate</h5>
-			<h1>Check out my certificates</h1>
+   			<h5>MY CERTIFICATES</h5>
+			<h2>Professional Certifications</h2>
    		</div>   		
    	</div> <!-- /section-intro--> 
 
-   	<div class="row certificate-content">
+   	<div class="row portfolio-content">
 
    		<div class="col-twelve">
 
    			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full portfolio-list">
+                
+                <!-- Certificate 1 -->
+                <div class="bgrid folio-item">
+                    <div class="item-wrap">
+                        <img src="images/certificate/C1.jpg" alt="Automation Testing Certificate">
+                        <a href="#cert-modal-01" class="overlay popup-modal">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">Automation Testing</h3>
+                                    <span class="folio-types">Great Learning</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> <!-- /folio-item -->
 
-	         	<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/certificate/C1.jpg" alt="Introduction to Automation Testing">
-	                  <a href="#modal-01" class="overlay">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Great Learning</h3>	     					    
-		     					    	 <span class="folio-types">
-		     					       	  Introduction to Automation Testing
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>	               
-	        		</div> <!-- /folio-item -->
+                <!-- Certificate 2 -->
+                <div class="bgrid folio-item">
+                    <div class="item-wrap">
+                        <img src="images/certificate/C2.jpg" alt="Software Testing Tutorial Certificate">
+                        <a href="#cert-modal-02" class="overlay popup-modal">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">Software Testing Tutorial</h3>
+                                    <span class="folio-types">Great Learning</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> <!-- /folio-item -->
 
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/certificate/C2.jpg" alt="Software Testing Tutorial">
-	               	<a href="#modal-02" class="overlay">              		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Great Learning</h3>	     					    
-		     					    	<span class="folio-types">
-											Software Testing Tutorial
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
+                <!-- Certificate 3 -->
+                <div class="bgrid folio-item">
+                    <div class="item-wrap">
+                        <img src="images/certificate/C3.jpg" alt="Manual Testing Certificate">
+                        <a href="#cert-modal-03" class="overlay popup-modal">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">Manual Testing</h3>
+                                    <span class="folio-types">Great Learning</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Certificate 4 -->
+                <div class="bgrid folio-item">
+                    <div class="item-wrap">
+                        <img src="images/certificate/C1.jpg" alt="Introduction to Automation Testing">
+                        <a href="#cert-modal-04" class="overlay popup-modal">
+                            <div class="folio-item-table">
+                                <div class="folio-item-cell">
+                                    <h3 class="folio-title">Great Learning</h3>
+                                    <span class="folio-types">Introduction to Automation Testing</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-					
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/certificate/C3.jpg"alt="Introducton to Manual Testing">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Great Learning</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Introducton to Manual Testing
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div> 
-	        		</div> <!-- /folio-item -->
+            </div>
+        </div>
+    </div>
 
-				
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/certificate/C1.jpg" alt="Introduction to Automation Testing">
-	                  <a href="#modal-04" class="overlay">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Great Learning</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Introduction to Automation Testing
-		     					      </span>		     		
-		     					   </div>  	                      	
-	                     </div>                    
-	                  </a>
-	               </div> 
-	        		</div> <!-- /folio-item -->     
+    <!-- Modal Popups -->
+    <div id="cert-modal-01" class="popup-modal slider mfp-hide">	
+        <div class="description-box">
+            <h4>Great Learning</h4>		      
+            <p>A comprehensive certification in Automation Testing, covering key methodologies, tools, and best practices in software test automation.</p>
+            <div class="categories">Introduction to Automation Testing</div>			               
+        </div>
+        <div class="link-box">
+            <a href="https://www.mygreatlearning.com/certificate/YFXNNGPY" target="_blank">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>
+    </div>
 
-					<!----
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-	                  <a href="#modal-05" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Lighthouse</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Web Development
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div> -->
-	        		</div> <!-- /folio-item -->
+    <div id="cert-modal-02" class="popup-modal slider mfp-hide">	
+        <div class="description-box">
+            <h4>Great Learning</h4>		      
+            <p>An in-depth tutorial certification that explores comprehensive software testing techniques, methodologies, and industry-standard practices.</p>
+            <div class="categories">Software Testing Tutorial</div>			               
+        </div>
+        <div class="link-box">
+            <a href="https://www.mygreatlearning.com/certificate/GGQOPMLA" target="_blank">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>
+    </div>
 
-					<!----
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/salad.jpg" alt="Salad">
-	                  <a href="#modal-06" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Salad</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Branding
-		     					      </span>		     		
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div> -->
-	        		</div> <!-- /folio-item -->   
+    <div id="cert-modal-03" class="popup-modal slider mfp-hide">	
+        <div class="description-box">
+            <h4>Great Learning</h4>		      
+            <p>A foundational certification in Manual Testing, providing essential skills in test case design, execution, and quality assurance processes.</p>
+            <div class="categories">Introduction to Manual Testing</div>			               
+        </div>
+        <div class="link-box">
+            <a href="https://www.mygreatlearning.com/certificate/NGJCSPAU" target="_blank">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>
+    </div>
 
-	            <!-- modal popups - begin
-	            ============================================================= -->
-	            <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/certificate/C1.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Great Learning</h4>		      
-					      <p>Hello World.</p>
-
-					      <div class="categories"></div>	Introduction to Automation Testing		               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="https://olympus.mygreatlearning.com/courses/100896/certificate?pb_id=581/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-01 -->
-
-				   <div id="modal-02" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/certificate/C2.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Group Project</h4>		      
-					      <p>platform where people can book appointments with hospitals and doctors for treatment, finds the available schedule of different specialist doctors, knows the health services of different hospitals, managing patient reports, prices of different health check-ups in different hospitals, buys medicines and many more services. </p>
-
-					      <div class="categories">Digital Health</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.khagendraprasadbimali.com.np/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-02 -->
-
-				   
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/certificate/C3.jpg" alt="" />
-				     	</div>      	
-
-					
-						<div class="description-box">
-					      <h4>Comming Soon</h4>		      
-					      <p>Its is an web based platform for foods.</p>
-
-					      <div class="categories">E-Commerce Website</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.khagendraprasadbimali.com.np/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>	   
-
-				   </div> <!-- /modal-03 -->
-
-				   
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/certificate/C3.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Comming Soon</h4>		      
-					      <p>The common platform to know more about our country NEPAL.</p>
-
-					      <div class="categories">Web Application</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.khagendraprasadbimali.com.np/">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>	     
-
-				   </div> <!-- /modal-04 -->
-
-				   <!----
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Lighthouse</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-					      <div class="categories">Web Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		  -->    
-
-				   </div> <!-- /modal-05 -->
-
-				 <!----  
-				   <div id="modal-06" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Salad</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-					      <div class="categories">Branding</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		-->      
-
-				   </div> <!-- /modal-06 -->
+    <div id="cert-modal-04" class="popup-modal slider mfp-hide">	
+        <div class="description-box">
+            <h4>Great Learning</h4>		      
+            <p>An advanced certification reinforcing the fundamentals of Automation Testing, emphasizing practical skills and industry-relevant tools.</p>
+            <div class="categories">Introduction to Automation Testing</div>			               
+        </div>
+        <div class="link-box">
+            <a href="https://www.mygreatlearning.com/certificate/YFXNNGPY" target="_blank">Details</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>
+    </div>
+</section> <!-- /portfolio --> 
 
 
-				   <!-- modal popups - end
-	            ============================================================= -->
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
-			
-
-
-
-	<!-- CTA Section
+<!-- stats Section
    ================================================== -->
-   <!----
-	<section id="cta" class="grey-section">
+   <section id="stats" class="count-up">
 
-   	<div class="row cta-content">
+	<div class="row">
+		<div class="col-twelve">
 
-   		<div class="col-twelve section-ads">  
+			<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
 
-	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+				<div class="bgrid stat">
 
-		      <p class="lead">
-		      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. --->
-				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
-				<!---</p>
+					<div class="icon-part">
+						<i class="icon-pencil-ruler"></i>
+					</div>
 
-				<div class="action">
-			      <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-		      </div>		     	
+					<h3 class="stat-count">
+						2
+					</h3>
 
-   		</div>--->
+					<h5 class="stat-title">
+						Projects Completed
+					</h5>
 
-   <!---</div> --> <!-- /cta-content -->
+				</div> <!-- /stat -->					
 
-  <!---- </section> --> <!-- /cta --> 
+				<div class="bgrid stat">
 
-	
-	<!-- services Section
-   ================================================== -->
-   <!----
-	<section id="services">
+					<div class="icon-part">
+						<i class="fa fa-users"></i>
+					</div>
 
-		<div class="overlay"></div>
+					<h3 class="stat-count">
+						2
+					</h3>
 
-		<div class="row section-intro">
-   		<div class="col-twelve">
+					<h5 class="stat-title">
+						Happy Clients
+					</h5>
 
-   			<h5>Services</h5>
-   			<h1>What Can I Do For You?</h1>
+				</div> <!-- /stat -->
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+				<div class="bgrid stat">
 
-   		</div>   		
-   	</div>--> <!-- /section-intro -->
-<!----
-   	<div class="row services-content">
+					<div class="icon-part">
+						<i class="fa fa-badge"></i>
+					</div>
 
-   		<div id="owl-slider" class="owl-carousel services-list">
+					<h3 class="stat-count">
+						2
+					</h3>
 
-	      	<div class="service">	
+					<h5 class="stat-title">
+						Awards Received
+					</h5>
 
-	      		<span class="icon"><i class="icon-earth"></i></span>            
+				</div> <!-- /stat -->									
 
-	            <div class="service-content">	
+				<div class="bgrid stat">
 
-	            	 <h3>Webdesign</h3>
+					<div class="icon-part">
+						<i class="fa fa-light-bulb"></i>
+					</div>
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p>
-	         		
-	         	</div> 	         	 
+					<h3 class="stat-count">
+						12
+					</h3>
 
-				</div> --> <!-- /service -->
+					<h5 class="stat-title">
+						Crazy Ideas
+					</h5>
+
+				</div> <!-- /stat -->
+
 				<!----
+				<div class="bgrid stat">
 
-				<div class="service">	
+					<div class="icon-part">
+						<i class="fa fa-cup"></i>
+					</div>
 
-					<span class="icon"><i class="icon-window"></i></span>                          
+					<h3 class="stat-count">
+						1500
+					</h3>
 
-	            <div class="service-content">	
+					<h5 class="stat-title">
+						Coffee Cups
+					</h5>
 
-	            	<h3>Web Development</h3>  
+				</div> ---> <!-- /stat -->
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p>
+				<!---- <div class="bgrid stat">
 
-	            </div>	                          
+					<div class="icon-part">
+						<i class="fa fa-clock"></i>
+					</div>
 
-			   </div>--> <!-- /service -->
-			   <!----
+					<h3 class="stat-count">
+						7200
+					</h3>
 
-			   <div class="service">
+					<h5 class="stat-title">
+						Hours
+					</h5>
 
-			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
+				</div> --->  <!-- /stat -->
 
-	            <div class="service-content">
+			</div> <!-- /stats-list -->
 
-	            	<h3>Branding</h3>
+		</div> <!-- /twelve -->
+	</div> <!-- /row -->
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
+</section> <!-- /stats -->
 
-	            </div> 	            	               
 
-			   </div> --> <!-- /service -->
-			   <!----
+<!-- contact
+================================================== -->
+<section id="contact">
 
-				<div class="service">
+	<div class="row section-intro">
+	   <div class="col-twelve">
 
-					<span class="icon"><i class="icon-toggles"></i></span>	              
+		   <h5>CONTACT ME </h5>
+		   <h1>I'd Love To Hear From You.</h1>
+		<P>If you like my work and want to avail my services then drop me a message using the contact form. See You!</P>
 
-	            <div class="service-content">
+		   <!--<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> --->
 
-	            	<h3>UI/UX Design</h3>
+	   </div> 
+   </div> <!-- /section-intro -->
 
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         		</p> 
-	         		
-	            </div>                
+   <div class="row contact-form">
 
-				</div> --> <!-- /service -->
-				<!----
+	   <div class="col-twelve">
 
-			   <div class="service">
+		<!-- form -->
+		<form name="contactForm" id="contactForm" method="post" action="">
+			  <fieldset>
 
-			   	<span class="icon"><i class="icon-image"></i></span>	            
-
-	            <div class="service-content">
-
-	            	<h3>Graphics Design</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-
-	            </div>	               
-
-			   </div> --->  <!-- /service -->
-			   <!----
-
-			   <div class="service">
-
-			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
-
-	            <div class="service-content">
-
-	            	 <h3>Consultancy</h3>
-
-		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	        			</p> 
-	        			
-	            </div>	               
-
-			   </div>  --> <!-- /service -->
-
-	     <!---- </div>  --> <!-- /services-list -->
-   		
-   	<!---- </div> ---> <!-- /services-content -->
-		
-	<!----   </section>  --> <!-- /services -->	
-
-
-	<!-- stats Section
-   ================================================== -->
-	<section id="stats" class="count-up">
-
-		<div class="row">
-			<div class="col-twelve">
-
-				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-pencil-ruler"></i>
-						</div>
-
-						<h3 class="stat-count">
-							2
-						</h3>
-
-						<h5 class="stat-title">
-							Projects Completed
-						</h5>
-
-					</div> <!-- /stat -->					
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-users"></i>
-						</div>
-
-						<h3 class="stat-count">
-							2
-						</h3>
-
-						<h5 class="stat-title">
-							Happy Clients
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-badge"></i>
-						</div>
-
-						<h3 class="stat-count">
-							2
-						</h3>
-
-						<h5 class="stat-title">
-							Awards Received
-						</h5>
-
-					</div> <!-- /stat -->									
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-light-bulb"></i>
-						</div>
-
-						<h3 class="stat-count">
-							12
-						</h3>
-
-						<h5 class="stat-title">
-							Crazy Ideas
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<!----
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-cup"></i>
-						</div>
-
-						<h3 class="stat-count">
-							1500
-						</h3>
-
-						<h5 class="stat-title">
-							Coffee Cups
-						</h5>
-
-					</div> ---> <!-- /stat -->
-
-					<!---- <div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-clock"></i>
-						</div>
-
-						<h3 class="stat-count">
-							7200
-						</h3>
-
-						<h5 class="stat-title">
-							Hours
-						</h5>
-
-					</div> --->  <!-- /stat -->
-
-				</div> <!-- /stats-list -->
-
-			</div> <!-- /twelve -->
-		</div> <!-- /row -->
-
-	</section> <!-- /stats -->
-
-	
-   <!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>CONTACT ME </h5>
-   			<h1>I'd Love To Hear From You.</h1>
-			<P>If you like my work and want to avail my services then drop me a message using the contact form. See You!</P>
-
-   			<!--<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> --->
-
-   		</div> 
-   	</div> <!-- /section-intro -->
-
-   	<div class="row contact-form">
-
-   		<div class="col-twelve">
-
-            <!-- form -->
-            <form name="contactForm" id="contactForm" method="post" action="">
-      			<fieldset>
-
-                  <div class="form-field">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
-                  <div class="form-field">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div>                      
-                 <div class="form-field">
-                     <button class="submitform">Submit</button>
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
+			  <div class="form-field">
+						<input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+			  </div>
+			  <div class="form-field">
+					 <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+			   </div>
+			  <div class="form-field">
+						<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+			   </div>                       
+			  <div class="form-field">
+					 <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+			   </div>                      
+			 <div class="form-field">
+				 <button class="submitform">Submit</button>
+				 <div id="submit-loader">
+					<div class="text-loader">Sending...</div>                             
+						 <div class="s-loader">
+								  <div class="bounce1"></div>
+								  <div class="bounce2"></div>
+								  <div class="bounce3"></div>
 							</div>
-                  </div>
+						</div>
+			  </div>
 
-      			</fieldset>
-      		</form> <!-- Form End -->
+			  </fieldset>
+		  </form> <!-- Form End -->
 
-            <!-- contact-warning -->
-            <div id="message-warning">            	
-            </div>            
-            <!-- contact-success -->
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
+		<!-- contact-warning -->
+		<div id="message-warning">            	
+		</div>            
+		<!-- contact-success -->
+		  <div id="message-success">
+		   <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+		  </div>
 
-         </div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /contact-form -->
+	 </div> <!-- /col-twelve -->
+	   
+   </div> <!-- /contact-form -->
 
-   	<div class="row contact-info">
+   <div class="row contact-info">
 
-   		<div class="col-four tab-full">
+	   <div class="col-four tab-full">
 
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
+		   <div class="icon">
+			   <i class="icon-pin"></i>
+		   </div>
 
-   			<h5>Address </h5>
+		   <h5>Address </h5>
 
-   			<p>
-            Kathmandu Metropolitian<br>
-            Buddhanagar-10<br>
-            44617, Nepal
-            </p>
+		   <p>
+		Kathmandu Metropolitian<br>
+		Buddhanagar-10<br>
+		</p>
 
-   		</div>
+	   </div>
 
-   		<div class="col-four tab-full collapse">
+	   <div class="col-four tab-full collapse">
 
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
+		   <div class="icon">
+			   <i class="icon-mail"></i>
+		   </div>
 
-   			<h5>Email </h5>
+		   <h5>Email </h5>
 
-   			<p>contact@khagendraprasadbimali.com.np<br>
-			   	khagendrapdbimali911@gmail.com			     
-			   </p>
+		   <p>contact@khagendraprasadbimali.com.np<br>
+			   khagendrapdbimali911@gmail.com			     
+		   </p>
 
-   		</div>
+	   </div>
 
-   		<div class="col-four tab-full">
+	   <div class="col-four tab-full">
 
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
+		   <div class="icon">
+			   <i class="fa fa-phone"></i>
+		   </div>
 
-   			<h5>Call</h5>
+		   <h5>Call</h5>
 
-   			<p>Phone: (+977) 9815908880<br>
-			   	Mobile: (+977) 9867994710<br>
-			     	<!--Fax: (+63) 555 0101 -->
-			   </p>
+		   <p>Phone: (+977) 9815908880<br>
+			   Mobile: (+977) 9867994710<br>
+				 <!--Fax: (+63) 555 0101 -->
+		   </p>
 
-   		</div>
-   		
-   	</div> <!-- /contact-info -->
-		
-	</section> <!-- /contact -->
+	   </div>
+	   
+   </div> <!-- /contact-info -->
+	
+</section> <!-- /contact -->
 
 
-   <!-- footer
-   ================================================== -->
+<!-- footer
+================================================== -->
 
-   <footer>
-     	<div class="row">
+<footer>
+	 <div class="row">
 
-     		<div class="col-six tab-full pull-right social">
+		 <div class="col-six tab-full pull-right social">
 
-     			<ul class="footer-social">        
-			      <li><a href="https://www.facebook.com/raju.bimali.8" target="_blank"><i class="fa fa-facebook"></i></a></li>
-			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			      <li><a href="https://www.youtube.com/@rajubimali?sub_confirmation=1"><i class="fa fa-youtube"></i></a></li>
-			      <li><a href="https://www.linkedin.com/in/khagendraprasadbimali/"><i class="fa fa-linkedin"></i></a></li>
-				  <li><a href="https://github.com/KhagendraBimali" target="_blank"><i class="fa fa-github"></i></a></li>
-			   </ul> 
-	      		
-	      </div>
+			 <ul class="footer-social">        
+			  <li><a href="https://www.facebook.com/raju.bimali.8" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			  <li><a href="https://www.instagram.com/rajubimali_?igsh=MW9yanNlOGxzMWF5cg==" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			  <li><a href="http://www.khagendraprasadbimali.com.np/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			  <li><a href="https://www.youtube.com/@rajubimali?sub_confirmation=1" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			  <li><a href="https://www.linkedin.com/in/khagendraprasadbimali/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			  <li><a href="https://github.com/KhagendraBimali" target="_blank"><i class="fa fa-github"></i></a></li>
+		   </ul> 
+			  
+	  </div>
 
-      	<div class="col-six tab-full">
-	      	<div class="copyright">
-		        	<span>© Khagendra Prasad Bimali 2024. All Rights Reserved</span> 
-		        	<span>Design - <a href="http://www.khagendraprasadbimali.com.np/">Khagendra Prasad Bimali</a></span>	         	
-		         </div>		                  
-	      	</div>
+	  <div class="col-six tab-full">
+		  <div class="copyright">
+				<span> Khagendra Prasad Bimali 2024. All Rights Reserved</span> 
+				<span>Design - <a href="http://www.khagendraprasadbimali.com.np/">Khagendra Prasad Bimali</a></span>	         	
+			 </div>		                  
+		  </div>
 
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
+		  <div id="go-top">
+			 <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		  </div>
 
-      	</div> <!-- /row -->     	
-   </footer>  
+	  </div> <!-- /row -->     	
+</footer>  
 
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+<div id="preloader"> 
+	<div id="loader"></div>
+</div> 
 
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
+<!-- Java Script
+================================================== --> 
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        // Portfolio Popup
+        $('#portfolio .popup-modal').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#name',
+            callbacks: {
+                beforeOpen: function() {
+                    this.st.mainClass = this.st.el.attr('data-effect');
+                }
+            }
+        });
+
+        // Certificate Popup
+        $('#certificate .popup-modal').magnificPopup({
+            type: 'inline',
+            preloader: false,
+            focus: '#name',
+            showCloseBtn: true,
+            closeOnContentClick: false,  
+            closeOnBgClick: true,
+            callbacks: {
+                beforeOpen: function() {
+                    this.st.mainClass = this.st.el.attr('data-effect');
+                },
+                open: function() {
+                    // Remove media div with image
+                    $('.popup-modal .media').remove();
+                    
+                    // Add click event to prevent modal close when clicking links
+                    $('.popup-modal .link-box a:not(.popup-modal-dismiss)').on('click', function(e) {
+                        // Allow link to be followed
+                        e.stopPropagation();
+                    });
+                }
+            }
+        });
+
+        $('.popup-modal-dismiss').on('click', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+    });
+</script>
+
+    <script>
+        // Ensure sections have some minimal content
+        document.addEventListener('DOMContentLoaded', function() {
+            const sectionsToEnsure = ['#resume', '#portfolio'];
+            sectionsToEnsure.forEach(selector => {
+                const section = document.querySelector(selector);
+                if (section && section.innerHTML.trim() === '') {
+                    section.innerHTML = `
+                        <div class="row section-intro">
+                            <div class="col-twelve">
+                                <h5>COMING SOON</h5>
+                                <h2>Content Under Development</h2>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+        });
+    </script>
 
 </body>
 
