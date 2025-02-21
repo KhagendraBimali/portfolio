@@ -136,7 +136,7 @@
             <h1 id="about-title" class="responsive-headline">Let me introduce myself.</h1>
 
             <div class="intro-info">
-                <img src="images/img7.jpg" alt="Profile Picture">
+                <img src="images/profile.jpg" alt="Profile Picture">
                 <p class="lead" aria-label="Professional Summary">"I believe QA is not just about finding bugs but about ensuring an exceptional end-user experience. I focus on proactively identifying areas of improvement and collaborating closely with developers and product managers to deliver robust, user-friendly products."</p>
             </div>
    		</div>   		
@@ -664,7 +664,7 @@
 					   </div>
 
 					   <div class="link-box">
-					        <a href="https://github.com/KhagendraBimali" target="_blank">Details</a>
+					        <a href="https://github.com/KhagendraBimali/Github-Project_1" target="_blank">Details</a>
 					        <a href="#" class="popup-modal-dismiss">Close</a>
 					   </div>
 
@@ -684,7 +684,7 @@
 					   </div>
 
 					   <div class="link-box">
-					        <a href="https://github.com/KhagendraBimali" target="_blank">Details</a>
+					        <a href="https://github.com/KhagendraBimali/Digital-Health" target="_blank">Details</a>
 					        <a href="#" class="popup-modal-dismiss">Close</a>
 					   </div>
 
@@ -706,7 +706,7 @@
 					   </div>
 
 					   <div class="link-box">
-					        <a href="#" target="_blank">Details</a>
+					        <a href="http://www.khagendraprasadbimali.com.np/" target="_blank">Details</a>
 					        <a href="#" class="popup-modal-dismiss">Close</a>
 					   </div>
 
@@ -727,7 +727,7 @@
 					   </div>
 
 					   <div class="link-box">
-					        <a href="#" target="_blank">Details</a>
+					        <a href="http://www.khagendraprasadbimali.com.np/" target="_blank">Details</a>
 					        <a href="#" class="popup-modal-dismiss">Close</a>
 					   </div>
 
@@ -1178,6 +1178,7 @@
 	<div id="loader"></div>
 </div> 
 
+
 <!-- Java Script
 ================================================== --> 
 <script src="js/jquery-2.1.3.min.js"></script>
@@ -1190,9 +1191,18 @@
             type: 'inline',
             preloader: false,
             focus: '#name',
+            closeOnContentClick: false,
+            closeOnBgClick: true,
             callbacks: {
                 beforeOpen: function() {
                     this.st.mainClass = this.st.el.attr('data-effect');
+                },
+                open: function() {
+                    // Specifically target portfolio modal links
+                    $('#portfolio .popup-modal .link-box a[target="_blank"]:not(.popup-modal-dismiss)').on('click', function(e) {
+                        // Allow link to be followed
+                        e.stopPropagation();
+                    });
                 }
             }
         });
