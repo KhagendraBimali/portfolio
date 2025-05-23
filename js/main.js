@@ -218,32 +218,13 @@
 
 	/* local validation */
 	$('#contactForm').validate({
-		/* submit via ajax */
 		submitHandler: function(form) {
-			var sLoader = $('#submit-loader');
-			var formData = $(form).serialize();
-
-			$.ajax({      	
-				type: "POST",
-				url: $(form).attr('action'),
-				data: formData,
-				dataType: "json",
-				beforeSend: function() { 
-					sLoader.fadeIn(); 
-					$('#message-warning').hide();
-					$('#message-success').hide();
-				},
-				success: function(msg) {
-					sLoader.fadeOut(); 
-					$('#contactForm').fadeOut();
-					$('#message-success').fadeIn();   
-				},
-				error: function(xhr, status, error) {
-					sLoader.fadeOut(); 
-					$('#message-warning').html("Something went wrong. Please try again.");
-					$('#message-warning').fadeIn();
-				}
-			});     		
+			// Show success message
+			$('#message-success').fadeIn();
+			// Hide the form
+			$('#contactForm').fadeOut();
+			// Submit the form
+			form.submit();
 		}
 	});
 
