@@ -227,6 +227,7 @@
 				type: "POST",
 				url: $(form).attr('action'),
 				data: formData,
+				dataType: "json",
 				beforeSend: function() { 
 					sLoader.fadeIn(); 
 					$('#message-warning').hide();
@@ -237,7 +238,7 @@
 					$('#contactForm').fadeOut();
 					$('#message-success').fadeIn();   
 				},
-				error: function() {
+				error: function(xhr, status, error) {
 					sLoader.fadeOut(); 
 					$('#message-warning').html("Something went wrong. Please try again.");
 					$('#message-warning').fadeIn();
